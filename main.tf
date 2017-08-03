@@ -21,7 +21,7 @@ variable "aws_region" {
 resource "aws_instance" "web" {
   ami                    = "ami-b87299c1"
   instance_type          = "t2.micro"
-  count                  = "2"
+  count                  = "3"
   subnet_id              = "subnet-f0e85097"
   vpc_security_group_ids = ["sg-b2a021ca"]
 
